@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link href="calc.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="calc.js" ></script>
+	<script type="text/javascript">
+	  var calc=null;
+	  window.onload=function(){
+	    calc = new Calculator('calcId');
+	    calc1 =  new Calculator('calcId2');
+	  };
+	</script>
+</head>
+<body>
+  <center>
+   <b>Calc1 instance</b>
+      <div id="calcId"></div>
+   <br><br>
+   <b>Calc2 instance</b>
+      <div id="calcId2"></div>
+
+  </center>
+
+</body>
+</html>
