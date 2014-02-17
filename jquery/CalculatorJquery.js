@@ -1,5 +1,5 @@
 (function($){
-  $.fn.CommomModel = function(options){
+  $.fn.BaseModel = function(options){
     this.id = options.id || '';
     this.className = options.className || '';
     this.color = options.color || '';
@@ -11,7 +11,7 @@
 
   // Display Model
   $.fn.DisplayModel = function(options){
-    var displayModel = $.fn.CommomModel(options);
+    var displayModel = $.fn.BaseModel(options);
     displayModel.type = options.type || '';
 
     return displayModel;
@@ -19,7 +19,7 @@
 
  // Button Model
 $.fn.ButtonModel = function(options){
-  var buttonModel = $.fn.CommomModel(options);
+  var buttonModel = $.fn.BaseModel(options);
   buttonModel.value = options.value || '';
   return buttonModel;
 };
