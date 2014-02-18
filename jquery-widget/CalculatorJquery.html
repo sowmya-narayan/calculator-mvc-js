@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator by jquery MVC</title>
+  <link href="CalculatorJquery.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery-1.11.0.js"></script>
+  <script type="text/javascript" src="jquery-ui-1.10.2.js"></script>
+  <script type="text/javascript" src="CalculatorJquery.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function(){  // will run once the entire page (images or iframes), not just the DOM, is ready! 
+      $("#calc1_id").calculator({});          
+      $("#calc2_id").calculator({});      
+      //$("#calc1_id").Calculator();
+      //$(" #calc2_id").Calculator();
+    });
+  </script>
+</head>
+
+<body>
+  <div id="calc1_id" class="calCls">
+  </div>
+
+  <div id = "calc2_id" class="calCls">
+  </div>
+</body>
+
+</html>
